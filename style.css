@@ -27,6 +27,13 @@ h2{
     padding: 10px
 }
 
+/* responsive */
+@media screen and (max-width: 870px) {
+     br {
+        display: none;
+    }
+}
+
 a:hover{
     color: rgb(240, 223, 125);
 }
@@ -254,15 +261,6 @@ ul{
     overflow: hidden;
 }
 
-br {
-    display: none;
-}
-/* responsive */
-@media screen and (max-width: 870px) {
-    br {
-        display: block;
-    }
-}
 
 /* about */
 #about{
@@ -290,6 +288,16 @@ br {
 @media screen and (max-width: 870px) {
     #about p{
         margin: 80px 0;
+    }
+}
+
+#about h2 br {
+    display: none;
+}
+/* responsive */
+@media screen and (max-width: 870px) {
+    #about h2 br {
+        display: block;
     }
 }
 
