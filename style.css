@@ -27,12 +27,6 @@ h2{
     padding: 10px
 }
 
-/* responsive */
-@media screen and (max-width: 870px) {
-     br {
-        display: none;
-    }
-}
 
 a:hover{
     color: rgb(240, 223, 125);
