@@ -1,6 +1,11 @@
+/* Theme:yorudake
+Author:yorudake
+Version:1.0
+Description:test */
+
 /* base */
 body{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 img{
@@ -17,7 +22,7 @@ h2{
 }
 
 a:hover{
-    color: aqua;
+    color: rgb(240, 223, 125);
 }
 
 .content{
@@ -35,15 +40,16 @@ a:hover{
 
 /* header */
 .header{
+    position: fixed;
     color: white;
     width: 100%;
     transition: .3s;
     z-index: 2;
 }
 
-.header .float-active{
+.header.float-active{
     transition: .3s;
-    background: black;
+    background: rgba(204, 204, 204, 0.8);
 }
 
 nav{
@@ -60,6 +66,7 @@ nav{
     font-size: 50px;
     float: left;
     margin: 20px;
+    text-align: center;
 }
 
 /* responsive */
@@ -169,7 +176,7 @@ ul{
 
 /* about */
 #about{
-    background: #F6F6F6;
+    background: #eff3fc;
 }
 
 .container-body{
@@ -190,14 +197,14 @@ ul{
 
 /* menu */
 #menu{
-    height: 1100px;
+    height: 1200px;
 }
 
 .item{
-    height: 230px;
+    width: 880px;
+    height: 229px;
     margin: 100px 0;
     border: 3px solid black;
-    box-sizing: border-box;
 }
 
 .item h3{
@@ -210,12 +217,12 @@ ul{
 }
 
 .item img{
-    height: 224px;
+    height: 230px;
 }
 
 .item-1_body, .item-3_body{
     width: 500px;
-    height: 224px;
+    height: 230px;
     padding: 30px;
     float: left;
     box-sizing: border-box;
@@ -223,13 +230,14 @@ ul{
 
 .item-1_img, .item-3_img{
     width: 350px;
-    height: 224px;
+    height: 230px;
     float: right;
     box-sizing: border-box;
 }
 
 .item-2_body{
     width: 500px;
+    height: 230px;
     padding: 30px;
     float: right;
     box-sizing: border-box;
@@ -237,7 +245,7 @@ ul{
 
 .item-2_img{
     width: 350px;
-    height: 224px;
+    height: 230px;
     float: left;
     box-sizing: border-box;
 }
@@ -246,7 +254,7 @@ ul{
 /* price */
 #price{
     height: 500px;
-    background:#F6F6F6;
+    background:#eff3fc;
 }
 
 #price h2{
@@ -308,7 +316,7 @@ td{
 /* access */
 #access{
     height: 800px;
-    background: #F6F6F6;
+    background: #eff3fc;
 }
 
 
@@ -328,7 +336,7 @@ td{
 /* sns */
 .sns-group{
     height: 50px;
-    background: #ccc;
+    background: #b4cbfa;
 }
 
 .sns{
@@ -347,7 +355,7 @@ td{
 
 /* footer */
 .footer{
-    background: #ccc;
+    background: #b4cbfa;
     font-size: 12px;
 }
 
