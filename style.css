@@ -265,6 +265,7 @@ ul{
 /* about */
 #about{
     background:rgba(241, 232, 178, 0.2);
+    text-align: center;
 }
 
 .container-body{
