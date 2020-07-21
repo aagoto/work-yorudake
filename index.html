@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Yorudake</title>
@@ -28,7 +29,13 @@
                 </ul>
             </nav>
     </header>
-    <section class="hero js-float-menu-target"></section>
+    <section class="swiper-container js-float-menu-target" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/全体.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/PC作業.jpg" alt=""></div>
+            <div class="swiper-slide" data-swiper-autoplay="6000"><img src="./img/イラスト.jpg" alt=""></div>
+        </div>
+    </section>
     <section id="about">
         <div class="content">
             <div class="container-body">
@@ -179,9 +186,9 @@
     <section class="footer">
         <div class="copyright">2020 copyright yorudake All Right Reserved.</div>
     </section>
-    <footer>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script> 
         <script src="app.js"></script>
-    </footer>
 </body>
 </html>
