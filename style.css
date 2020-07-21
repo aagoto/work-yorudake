@@ -8,6 +8,12 @@ body{
     font-size: 18px;
 }
 
+@media screen and (max-width: 870px) {
+         body {
+            font-size: 24px;
+        }
+}
+
 img{
     width: 100%;
 }
@@ -62,7 +68,7 @@ nav{
 
 .logo{
     width: 300px;
-    height: 100px;
+    height: 80px;
     font-size: 50px;
     float: left;
     margin: 20px;
@@ -70,7 +76,8 @@ nav{
 }
 
 /* responsive */
-/* .nav-menu{
+@media screen and (max-width: 870px) {
+.nav-menu{
     display: block;
     position: absolute;
     top: 0;
@@ -80,12 +87,15 @@ nav{
     padding: 50px 0;
     transition: 0.5s;
 }
-
-.nav-menu .active{
+.nav-menu.active{
     transition: .5s;
     transform: translateX(-100%);
     z-index: 2;
-} */
+    height: 600px;
+    font-size: 30px;
+}
+}
+
 
 ul{
     margin: 50px 20px;
@@ -101,7 +111,8 @@ ul{
 }
 
 /* responsive */
-/* .menu{
+@media screen and (max-width: 870px) {
+.menu{
     display: block;
 }
 
@@ -111,9 +122,11 @@ ul{
 
 .menu-link{
     display: block;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
-} */
+} 
+}
+
 
 .menu-trigger{
     display: none;
@@ -123,6 +136,16 @@ ul{
     width: 40px;
     height: 32px;
     z-index: 3;
+}
+
+/* responsive */
+@media screen and (max-width: 870px) {
+    .menu-trigger{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
 }
 
 .menu-trigger span{
@@ -150,19 +173,15 @@ ul{
 }
 
 
-.menu-trigger .active span:nth-of-type(1){
+.menu-trigger.active span:nth-of-type(1){
     transform: translateY(12px) rotate(-45deg);
 }
-.menu-trigger .active span:nth-of-type(2){
+.menu-trigger.active span:nth-of-type(2){
     opacity: 0;
 }
-.menu-trigger .artive span:nth-of-type(3){
-    transform: translateY(-15px) rotate(45deg)
+.menu-trigger.active span:nth-of-type(3){
+    transform: translateY(-15px) rotate(45deg);
 }
-/* responsive */
-/* .menu-trigger{
-    display: inline-block;
-} */
 
 /* swiper */
 .swiper-container {
@@ -227,6 +246,7 @@ ul{
   }
   
 
+/* hero */
 .hero{
     background-image: url(./img/cafe1.jpg);
     background-size: cover;
@@ -236,18 +256,44 @@ ul{
     overflow: hidden;
 }
 
+
+br {
+    display: none;
+}
+/* responsive */
+@media screen and (max-width: 870px) {
+    br {
+        display: block;
+    }
+}
+
 /* about */
 #about{
-    background: #eff3fc;
+    background:rgba(241, 232, 178, 0.2);
 }
 
 .container-body{
     width: 500px;
     margin: 0 auto;
 }
+/* responsive */
+@media screen and (max-width: 870px) {
+    .container-body {
+        width: 100%;
+    }
+    #about p{
+        margin: 60px 0;
+    }
+}
 
 #about p{
     margin: 40px 0;
+}
+/* responsive */
+@media screen and (max-width: 870px) {
+    #about p{
+        margin: 80px 0;
+    }
 }
 
 .youtube{
@@ -277,6 +323,11 @@ ul{
 .item p{
     margin: 20px 0;
 }
+@media screen and (max-width: 870px) {
+    .item p {
+        margin: 5px 0;
+   }
+}
 
 .item img{
     height: 230px;
@@ -288,6 +339,14 @@ ul{
     padding: 30px;
     float: left;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 870px) {
+    .item-1_body, .item-3_body {
+        width: 530px;
+        padding: 15px;
+        margin: 0;
+   }
 }
 
 .item-1_img, .item-3_img{
@@ -305,6 +364,13 @@ ul{
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 870px) {
+    .item-2_body{
+        padding: 15px;
+        margin: 0;
+   }
+}
+
 .item-2_img{
     width: 350px;
     height: 230px;
@@ -316,7 +382,7 @@ ul{
 /* price */
 #price{
     height: 500px;
-    background:#eff3fc;
+    background:rgba(241, 232, 178, 0.2);
 }
 
 #price h2{
@@ -378,7 +444,7 @@ td{
 /* access */
 #access{
     height: 800px;
-    background: #eff3fc;
+    background:rgba(241, 232, 178, 0.2);
 }
 
 
@@ -398,26 +464,23 @@ td{
 /* sns */
 .sns-group{
     height: 50px;
-    background: #b4cbfa;
+    background: rgba(192, 192, 192, 0.8);
+    text-align: center;
 }
 
 .sns{
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid black;
-    line-height: 30px;
-    float: left;
-    margin: 0 40px;
+    margin: 0 20px;
+    font-size: 30px;
+    align-items: center;
 }
 
-.sns:hover{
-    background: white;
+.fab:hover{
+    color: rgb(240, 223, 125);
 }
 
 /* footer */
 .footer{
-    background: #b4cbfa;
+    background: rgba(192, 192, 192, 0.8);
     font-size: 12px;
 }
 
